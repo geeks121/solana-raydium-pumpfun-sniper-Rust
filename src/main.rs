@@ -17,11 +17,12 @@ async fn main() {
     let logger = Logger::new("[INIT] => ".to_string());
 
     dotenv().ok();
+        let wallet = import_wallet().unwrap();
+    let wallet_cloned = wallet.clone();
     let rpc_wss = import_env_var("RPC_WSS");
     let rpc_client = create_rpc_client().unwrap();
     let rpc_nonblocking_client = create_nonblocking_rpc_client().await.unwrap();
-    let wallet = import_wallet().unwrap();
-    let wallet_cloned = wallet.clone();
+
 
     let state = AppState {
         rpc_client,
