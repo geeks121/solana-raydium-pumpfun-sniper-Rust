@@ -63,8 +63,6 @@ src/
 ---
 ## Trial Versions
 
-### **Solana PumpRay Sniper (Trial)**  
-> 🗂️ [solana-pumpray-sniper(trial).zip](https://github.com/user-attachments/files/19416260/solana-pumpray-sniper.trial.zip)
 
 **Strategy Details:**
 - **Entry Trigger:** Monitor user purchases of the new tokens on Dex; execute a buy order upon detection.
